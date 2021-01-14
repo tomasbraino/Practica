@@ -1,0 +1,169 @@
+
+
+                /*
+                 selector{
+
+                    propiedad: valor;
+                } 
+                */         
+                        
+                
+                *{ /*selector universal, selecciona todos los elementos*/
+
+                    
+                }
+
+                h1 { /*selector de tipo. Puede ser cualquier etiqueta html*/
+                    color: red;
+                }
+
+                .titulo-h2{  /*selector por clase. Solo los que tengan el nombre "titulo-h2" seran modificados */
+                    color: red;
+                                }
+
+                #element-for-modify{  /*selector de tipo ID.*/
+
+                    color: red;
+
+                }
+
+               
+
+                [atributo="hola"]{ /*selector por atributo*/
+
+                    color: red;
+
+                }
+
+                h p { /*selector que modifica los <p> dentro de los h*/
+
+                        color: red;
+                }
+
+                .h2-class b span {  /*selector que modifica los <b> dentro de los h*/
+
+                    color:blue;
+                }
+
+                b:hover{ /*selector que modifica un texto en negrita y le da un efecto hover*/
+
+                    color: red;
+                }
+
+                /*ESPECIFICIDAD*/
+
+
+                /*  jerarquia en la especificidad. Desde arriba hacia abajo habra prioridad en los cambios
+                
+                !important
+
+                estilos en linea
+
+                identificadores
+
+                clase
+                pseudo-clases
+                atributos
+
+                elementos
+                pseudo-elementos
+                 
+                */
+
+                b {
+                    color: red;
+                }
+
+                
+                b {
+                    color:green;
+                }
+
+                
+                b {
+                    color: blue;
+                } /*el ultimo b sera el que se utiliza*/
+
+
+                h1{
+
+                    color: red;
+                }
+
+                *{
+                    box-sizing: border-box;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                
+
+                .contact-form {
+
+                    font-size: 25px;/*puedo establecer el valor del em mediante la caja contenedora. Por herencia*/
+                   /* background-color: #000;
+                    width: 50vw;
+                    height: 50vh;*/
+                }
+
+                .contact-form__h2 {/*medidas relativas (rem y em)*/
+
+                    font-size: 5em; /*1em == 16px*/
+                    font-family: Georgia ;
+                    font-weight: 100;
+                    line-height: 2; /*espacio ocupado por la letra*/
+                    color: cadetblue;
+                    background-color: red;
+                    display: inline-block;
+                    padding-bottom: 20px;
+                    padding-top: 20px;
+                    padding-left: 30px; /*el padding es la distancia que hay entre el texto y la caja, el margen. Tambien podemos utilizar un solo padding para cambiar la distancia una sola vez.*/
+                    padding-right: 30px;
+                    
+
+                    /*al hacer valer 20px contact-form, cambio el valor del contact-form__h2*/
+                }
+
+                
+                
+ /*    h2{
+
+    display: inline; con display cambio el comportamiento de la caja
+    background-color:
+
+
+ }     */
+
+ h1{
+     margin: 70px; /*el margin es el espacio que doy entre cajas*/
+     border-radius: 10px;
+     background-color: royalblue;
+ }
+ 
+ /*   BOX MODEL
+ 
+ CONTENT line-height
+ PADDING padding
+ BORDER border
+ MARGIN margin 
+ 
+ */
+
+
+ /*OUTLINE*/
+    .caja1{
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin: auto;
+    outline: 10px solid blue ; /*marco algun elemento con outline sin ocupar espacio*/
+    }
+
+    .caja2{
+        
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    margin: auto;
+
+    }
